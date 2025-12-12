@@ -1,6 +1,6 @@
 void main() {
 
-    final var name = "12 + 5";
+    var name = "12 + 5";
 
     print(name);
     print(name);
@@ -11,8 +11,28 @@ void main() {
     print(name);
 
     var firstName = 'Eko';
-    final lastname = "Khannedy"; // Final tidak bisa dideklarasi ulang
+    // final lastname = "Khannedy"; // Final tidak bisa dideklarasi ulang
 
     print(firstName);
-    print(lastName);
+    // print(lastName);
+
+    final array1 = [1,2,3]; // value bisa diubah
+    const array2 = [1,2,3]; // value tidak bisa diubah
+
+    array1[0] = 10;
+    // array2[0] = 10;
+
+    print(array1);
+    print(array2);
+
+    /// Sekian
+
+    late var value = getValue(); // late akan dibuat ketika dipanggil
+    print("Variable sudah dibuat");
+    print(value);
+}
+
+String getValue() {
+    print("getValue() Dipanggil");
+    return "M Febrian Syah";
 }
