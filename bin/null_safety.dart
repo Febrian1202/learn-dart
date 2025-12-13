@@ -13,7 +13,7 @@ void main() {
     String name = 'Febrian';
     String? nullName = name;
 
-    int? nullablePrize = null;
+    int? nullablePrize;
 
     if (nullablePrize != null) {
         int prize = nullablePrize;
@@ -29,4 +29,13 @@ void main() {
     // Konversi secara paksa
     int? nullableNumber = 12;
     int nonNullableNumber = nullableNumber!;
+
+    int? dataInt = 12;
+    double? dataDouble = dataInt?.toDouble();
+
+    // if(null != dataInt) {
+    //   dataDouble = dataInt.toDouble();
+    // }
+
+    print(dataDouble);
 }

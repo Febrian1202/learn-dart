@@ -3,7 +3,7 @@
 void main(){
 
     // this is name variable
-    var name = 'M Febrian Syah'
+    var name = 'M Febrian Syah';
 
     /* 
     comment multi line
