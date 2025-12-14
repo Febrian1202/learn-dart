@@ -14,13 +14,18 @@ void hello({required String? firstName, String? lastName}) { // named parameter 
   print('Hello $firstName $lastName');
 }
 
-int sum(List<int> numbers) {
+int sum(List<int> numbers) { // return value
   var total = 0;
   for (var value in numbers) {
     total += value;
   }
   return total;
 }
+
+// short expression function
+int jumlah(int first, int second) => first + second;
+
+
 
 void main() {
   sayHello('Febrian', 'Syah');
@@ -36,4 +41,5 @@ void main() {
   int total = sum([2,5,6,5,4,7,5]);
 
   print(total);
+  print(jumlah(4, 6));
 }
